@@ -1,0 +1,108 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.overlayer{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  top: 0px;
+  left: 0px;
+  z-index: 9998;
+}
+
+
+.loading_spinner {
+  border: 5px solid transparent;
+  border-top: 5px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  z-index: 9999;
+}
+
+
+
+div.alerta{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    background: #fff;
+    color: #000;
+    padding: 20px 0px 20px 20px;
+    z-index: 9999;
+    font-size: 18px;
+    margin-bottom: -100%;
+}
+
+div.alerta.opened{
+    margin-bottom: 0px;
+}
+
+div.alerta span{
+    float: left;
+}
+
+div.alerta .btn{
+    font-weight: bold;
+}
+
+
+
+
+
+
+div.confirma{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    z-index: 9999;
+    font-size: 18px;
+    margin-bottom: -100%;
+}
+
+
+div.confirma.opened{
+    margin-bottom: 0px;
+}
+
+div.confirma span{
+    display: block;
+    text-align: center;
+}
+
+div.confirma .btn{
+    font-weight: bold;
+}
+
+.error{
+    background: rgba(228, 29, 29,0.1);
+}
+

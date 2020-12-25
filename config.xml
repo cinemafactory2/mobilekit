@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.daft.lab" version="1.1" xmlns="http://www.w3.org/ns/widgets">
+  <name>LAB</name>
+  <description>LAB External save</description>
+  <author email="contacto@daft.cl" href="http://www.daft.cl">Daft Mobile APPs</author>
+
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="portrait" />
+  <preference name="target-device" value="universal" />
+  <preference name="fullscreen" value="true" />
+
+  <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
+  <plugin name="cordova-plugin-device" spec="1.1.2" />
+  <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
+
+  <icon src="assets/img/icon.png" />
+  <splash src="assets/img/splash.png" />
+</widget>
